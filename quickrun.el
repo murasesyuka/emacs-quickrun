@@ -377,7 +377,7 @@
     ("ats" . ((:command . "patscc")
                (:exec    . ("%c -DATS_MEMALLqOC_LIBC -o %e %s" "%e %a"))
                ;; (:compile-only . "%c -Wall -Werror %o -o %e %s")
-               (:remove  . ("%e"))
+               (:remove  . ("%e" "%n_dats.c"))
                (:description . "Compile ATS2 and execute")))
     )
   "List of each programming languages information.
@@ -439,7 +439,7 @@ if you set your own language configuration.
     ("\\.exs?\\'" . "elixir")
     ("\\.tcl\\'" . "tcl")
     ("\\.swift\\'" . "swift")
-    ("\\.\\(sats\\|dats\\)\\'" . "ats"))
+    ("\\.dats\\'" . "ats"))
   "Alist of (file-regexp . key)")
 
 (defvar quickrun/major-mode-alist
