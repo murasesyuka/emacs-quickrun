@@ -439,7 +439,7 @@ if you set your own language configuration.
     ("\\.exs?\\'" . "elixir")
     ("\\.tcl\\'" . "tcl")
     ("\\.swift\\'" . "swift")
-    ("\\.\\(sats\\|dats\\|hats\\)\\'" . "ats"))
+    ("\\.\\(sats\\|dats\\)\\'" . "ats"))
   "Alist of (file-regexp . key)")
 
 (defvar quickrun/major-mode-alist
