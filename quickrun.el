@@ -376,7 +376,7 @@
 
     ("ats" . ((:command . "patscc")
                (:exec    . ("%c -DATS_MEMALLOC_LIBC %o -o %e %s" "%e %a"))
-               (:compile-only . "patsopt -o %s")
+               (:compile-only . "patsopt -o %n_dats.c --dynamic %s")
                (:remove  . ("%e" "%n_dats.c"))
                (:description . "Compile ATS2 and execute")))
     )
